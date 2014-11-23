@@ -1,4 +1,4 @@
-##===- lib/Target/Hexagon/InstPrinter/Makefile ----------------------------===##
+##===- lib/Target/R600/AsmParser/Makefile ----------------*- Makefile -*-===##
 #
 #                     The LLVM Compiler Infrastructure
 #
@@ -7,9 +7,9 @@
 #
 ##===----------------------------------------------------------------------===##
 LEVEL = ../../../..
-LIBRARYNAME = LLVMHexagonAsmPrinter
+LIBRARYNAME = LLVMR600AsmParser
 
-# Hack: we need to include 'main' Hexagon target directory to grab private headers
-CPPFLAGS = -I$(PROJ_OBJ_DIR)/.. -I$(PROJ_SRC_DIR)/..
+# Hack: we need to include 'main' R600 target directory to grab private headers
+CPP.Flags += -I$(PROJ_OBJ_DIR)/.. -I$(PROJ_SRC_DIR)/..
 
 include $(LEVEL)/Makefile.common
